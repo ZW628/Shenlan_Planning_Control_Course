@@ -1,0 +1,9 @@
+需要完成 src/path_planning/src/frenet_optimal_trajectory.cpp 中的 TODO 部分
+
+编译前请先运行 `rosdep install -y --from-paths src --ignore-src` 来安装相关依赖
+
+建议第一次编译时使用 `catkin build` 进行编译，之后若是对代码有修改，则可以运行 `catkin build path_planning`，即单独编译 path_planning 部分，可以减少编译时间
+
+运行时请开两个终端，一个运行 `roslaunch path_planning planner.launch`，一个运行 ` roslaunch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch`
+
+如果你完成了代码之后觉得直线路径过于简单了，可以使用之前课程提供的路径数据，并自行修改 `obstacle_list_`，设置花样更多的路径
